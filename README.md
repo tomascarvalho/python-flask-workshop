@@ -5,6 +5,7 @@ This workshop is aimed at developers that have at least a basic knowledge of pro
 
 ## Requirements
 Before starting this workshop please do the following:
+
     - Clone this repository
     - Make sure you have [Python3](https://www.python.org/downloads/) installed
     - Make sure you have [pip](https://pip.pypa.io/en/stable/installing/) installed (The latests Python releases should already include pip)
@@ -12,6 +13,7 @@ Before starting this workshop please do the following:
 ## Flow
 
 This workshop workshop will be split in different branches inside this repository:
+
     - python-intro - This branch contains a small introduction to Python programming language
     - flask-intro - This branch contains the basic introduction of Flask and an "Hello world!" app
     - flask-view - This branch will explain how to render a view with Flask and the basics of Jinja2
