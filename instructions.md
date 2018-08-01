@@ -169,3 +169,5 @@ Inside the file we should have a `main` method:
         main()
 
 `__ name__ == '__main__'` will make sure that the code/statements present inside this block will run only when we execute this file directly, instead if we import this as module in another python file then we can call the function defined in it and also the block whichever is present inside the `__ name__ == '__main__'` will not get executed.
+
+Finally, to run your program simple write `python <my_file>.py` on your command line.
