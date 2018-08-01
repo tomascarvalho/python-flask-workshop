@@ -38,6 +38,8 @@ This is your best reference for when you're developing with Python.
 As Python is a mature programming language with millions of users worldwide, a simple Google search will also help you when you're stuck.
 StackOverflow is probably your best friend (after the docs).
 
+In the following examples Python interpreter will be used, which can be started by writing `python` in the command line.
+
 ### 2 - Python Syntax and Indentation
 #### 2.1 - Variables
 Docs: https://docs.python.org/3/tutorial/introduction.html#
@@ -86,7 +88,7 @@ Notice that we do not use brackets (`{}`) in Python. So how does the compiler kn
 By using *Indentation*.
 
 Although Indentation should be used in all languages, in order to improve readability, in Python it is obligatory.
-Typically four spaces are use to indent code in Python. Another amount can be use (such as 2 spaces), but that amount must be consistent throughout the program.
+Typically four spaces are used to indent code in Python. Another amount can be use (such as 2 spaces), but that amount must be consistent throughout the program.
 
 #### 2.2.2 - Cycles
 Docs: https://docs.python.org/3/tutorial/controlflow.html#for-statements
@@ -149,3 +151,21 @@ To call a function:
         a = int(input('Number a: '))
         b = int(input('Number b: '))
         print(sum(a, b))
+
+    main()
+
+
+### 3 - Running a Python program
+The latest examples where shown using the Python interpreter.
+But what if we want to save our program and call it later whenever we need?
+
+We just need to create a file with the `.py` extension, such as `<my_file>.py`.
+Inside the file we should have a `main` method:
+
+    def main():
+        # Your code goes in here
+
+    if __name__ == '__main__':
+        main()
+
+`__ name__ == '__main__'` will make sure that the code/statements present inside this block will run only when we execute this file directly, instead if we import this as module in another python file then we can call the function defined in it and also the block whichever is present inside the `__ name__ == '__main__'` will not get executed.
