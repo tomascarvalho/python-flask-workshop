@@ -32,16 +32,17 @@ The philosophy of Python can be seen in your Python interpreter if you run `impo
 ## Workshop
 
 ### 1 - Documentation
-Python 3 documentation can be found (here)[https://docs.python.org/3/].
+Python 3 documentation can be found [here](https://docs.python.org/3/).
 This is your best reference for when you're developing with Python.
 
-As Python is a mature programming language with millions of users worldwide, a simple Google search will also help you when you're stuck. StackOverflow is probably your best friend (after the docs).
+As Python is a mature programming language with millions of users worldwide, a simple Google search will also help you when you're stuck.
+StackOverflow is probably your best friend (after the docs).
 
 ### 2 - Python Syntax and Indentation
 #### 2.1 - Variables
 Python is dynamically typed, which means that you don't have to declare what type each variable is.
-
 So, lets imagine that you want to assign the value `10` to the variable `a`, you simply type:
+
     a = 10
     b = 5
     a = b * 2
@@ -50,6 +51,7 @@ So, lets imagine that you want to assign the value `10` to the variable `a`, you
     a = b # how much is a now?
 
 If you want to assign a string or other data type:
+
     a = 'some string'           # you can use single quotes
     a = "some string"           # but you can also use double quotes
     a = 'let\'s dance'          # you can escape a quote with a backslash
