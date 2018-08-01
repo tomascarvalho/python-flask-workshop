@@ -96,7 +96,7 @@ There are two ways of using a `for` cycle in Python.
 
 The _traditional_ `for` cycle:
 
-    for i in range(0,10):   # similar to C or Java -> for (i = 0; i < 10; i++)
+    for i in range(0,10):       # similar to C or Java -> for (i = 0; i < 10; i++)
         print(i)
 
 This is the same as:
@@ -113,10 +113,21 @@ An example using step:
 
     for i in range(0, 10, 2):   # prints only even numbers
         print(i)
-        
+
 Docs: https://docs.python.org/3/library/stdtypes.html#range
 
-#### 2.2.X - Functions
+The `for in` cycle:
+
+    for letter in 'word':       # prints every char in 'word'
+        print(letter)
+
+    fruits = ['banana', 'strawberry', 'pineapple']
+    for fruit in fruits:        # prints each element of the list followed by its length
+        print(fruit, len(fruit))
+
+
+
+#### 2.2.3 - Functions
 Docs: https://docs.python.org/3/tutorial/controlflow.html#defining-functions
 
 In Python a function starts with the `keyword` `def`, which stands for _definition_:
@@ -131,3 +142,10 @@ So if we want to create a function called `sum` which sums two given numbers:
 
     def sum(a, b):
         return a + b
+
+To call a function:
+
+    def main():
+        a = int(input('Number a: '))
+        b = int(input('Number b: '))
+        print(sum(a, b))
