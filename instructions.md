@@ -40,6 +40,8 @@ StackOverflow is probably your best friend (after the docs).
 
 ### 2 - Python Syntax and Indentation
 #### 2.1 - Variables
+Docs: https://docs.python.org/3/tutorial/introduction.html#
+
 Python is dynamically typed, which means that you don't have to declare what type each variable is.
 So, lets imagine that you want to assign the value `10` to the variable `a`, you simply type:
 
@@ -62,6 +64,70 @@ If you want to assign a string or other data type:
 
 
 Notice that there is no `;` after the assignment. Python does not use semi-colons.
+
 Also notice that an inline comment in Python starts with an `#`
 
-### 2.2 - Conditional Statements
+### 2.2 - Control Flow
+
+#### 2.2.1 - If, Elif, Else
+Docs: https://docs.python.org/3/tutorial/controlflow.html#if-statements
+
+In Python, control flow statements are defined similarly to the other languages:
+
+    lunch = input("Insert today's lunch: ") # we ask the user for an input
+    if lunch == 'pizza':                    # if lunch equals pizza
+        print('Yey!')                       # a print
+    elif lunch == 'francesinha':            # else if lunch equals francesinha
+        print('Nice!')
+    else:                                   # else (if lunch is anything else)
+        print('Meh...')
+
+Notice that we do not use brackets (`{}`) in Python. So how does the compiler knows which block of code belongs where?
+By using *Indentation*.
+
+Although Indentation should be used in all languages, in order to improve readability, in Python it is obligatory.
+Typically four spaces are use to indent code in Python. Another amount can be use (such as 2 spaces), but that amount must be consistent throughout the program.
+
+#### 2.2.2 - Cycles
+Docs: https://docs.python.org/3/tutorial/controlflow.html#for-statements
+
+Cycles, especially `for` cycles are easy to use in Python.
+There are two ways of using a `for` cycle in Python.
+
+The _traditional_ `for` cycle:
+
+    for i in range(0,10):   # similar to C or Java -> for (i = 0; i < 10; i++)
+        print(i)
+
+This is the same as:
+
+    for i in range(10):
+        print (i)
+
+The `range` function can take the following arguments:
+
+    range(stop)                 # where we only define the stop
+    range(start, stop, [step])  # where step is optional
+
+An example using step:
+
+    for i in range(0, 10, 2):   # prints only even numbers
+        print(i)
+        
+Docs: https://docs.python.org/3/library/stdtypes.html#range
+
+#### 2.2.X - Functions
+Docs: https://docs.python.org/3/tutorial/controlflow.html#defining-functions
+
+In Python a function starts with the `keyword` `def`, which stands for _definition_:
+
+    def main():
+        pass # this does nothing
+
+The `keyword` is followed by the function name, which in the above example is `main`.
+Following the function name, arguments are passed to the function inside the parenthesis.
+
+So if we want to create a function called `sum` which sums two given numbers:
+
+    def sum(a, b):
+        return a + b
