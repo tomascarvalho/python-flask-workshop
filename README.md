@@ -9,6 +9,7 @@ Before starting this workshop please do the following:
 - Clone this repository
 - Make sure you have [Python3](https://www.python.org/downloads/) installed
 - Make sure you have [pip](https://pip.pypa.io/en/stable/installing/) installed (The latests Python releases should already include pip)
+- Make sure that you have [Postgresql database](https://www.postgresql.org/download/) installed 
 
 ## Flow
 
