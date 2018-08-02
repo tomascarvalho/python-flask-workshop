@@ -44,6 +44,8 @@ In the following examples Python interpreter will be used, which can be started 
 #### 2.1 - Variables
 Docs: https://docs.python.org/3/tutorial/introduction.html#
 
+Note: Variable and function names should be written in `lower_case_with_underscores`.
+
 Python is dynamically typed, which means that you don't have to declare what type each variable is.
 So, lets imagine that you want to assign the value `10` to the variable `a`, you simply type:
 
@@ -88,7 +90,7 @@ Notice that we do not use brackets (`{}`) in Python. So how does the compiler kn
 By using *Indentation*.
 
 Although Indentation should be used in all languages, in order to improve readability, in Python it is obligatory.
-Typically four spaces are used to indent code in Python. Another amount can be use (such as 2 spaces), but that amount must be consistent throughout the program.
+Four spaces should be used to indent code in Python. (Docs: https://docs.python.org/3/tutorial/controlflow.html#intermezzo-coding-style)
 
 #### 2.2.2 - Cycles
 Docs: https://docs.python.org/3/tutorial/controlflow.html#for-statements
@@ -154,6 +156,33 @@ To call a function:
 
     main()
 
+#### 2.2.4 - Python Classes
+Docs: https://docs.python.org/3/tutorial/classes.html
+
+Creating a new class creates a new type of object, allowing new instances of that type to be made.
+The simplest form of class definition looks like this:
+
+    class ClassName:
+        <statement-1>
+        .
+        .
+        .
+        <statement-N>
+
+Note how `ClassName` is in `CamelCase`. Class names in Python should be written in `CamelCase`.
+
+Class instantiation uses function notation. Just pretend that the class object is a parameterless function that returns a new instance of the class. For example (assuming the above class):
+
+    x = MyClass()
+
+ Many classes like to create objects with instances customized to a specific initial state. Therefore a class may define a special method named `__init__()`, like this:
+
+    class User:
+        def __init__(self, user_name, email):
+            self.user_name = user_name
+            self.email = email
+
+
 
 ### 3 - Running a Python program
 The latest examples where shown using the Python interpreter.
@@ -169,5 +198,7 @@ Inside the file we should have a `main` method:
         main()
 
 `__ name__ == '__main__'` will make sure that the code/statements present inside this block will run only when we execute this file directly, instead if we import this as module in another python file then we can call the function defined in it and also the block whichever is present inside the `__ name__ == '__main__'` will not get executed.
+
+More info in docs: https://docs.python.org/3/tutorial/modules.html
 
 Finally, to run your program simple write `python <my_file>.py` on your command line.
