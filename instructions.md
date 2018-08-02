@@ -280,5 +280,3 @@ if __name__ == '__main__':
 More info in docs: https://docs.python.org/3/tutorial/modules.html
 
 Finally, to run your program simple write `python <my_file>.py` on your command line.
-
-### 4 - Exercises
