@@ -1,6 +1,7 @@
 # Pyhton Intro
 
 This branch will cover the Python Intro part of the workshop.
+Most of this introduction is based on the official Python 3 tutorial, which can be found at https://docs.python.org/3/tutorial/.
 
 ## What is Python
 Python is an high-level object-oriented programming language.
@@ -39,6 +40,7 @@ As Python is a mature programming language with millions of users worldwide, a s
 StackOverflow is probably your best friend (after the docs).
 
 In the following examples Python interpreter will be used, which can be started by writing `python` in the command line.
+To exit the interpreter just call `quit()` or `exit()` on the interpreter.
 
 ### 2 - Python Syntax and Indentation
 #### 2.1 - Variables
@@ -182,6 +184,49 @@ Class instantiation uses function notation. Just pretend that the class object i
             self.user_name = user_name
             self.email = email
 
+We can now instantiate a new `User` like this:
+
+    user = User('John Doe', 'johndoe@email.com')
+    print(user.email)       # prints 'johndoe@email.com'
+    print(user.user_name)   # prints 'John Doe'
+
+Data attributes do not need to be declared before assignment. For instance, if we wanted to add a `password` to `user` we could simply do:
+
+    user.password = 'password123'
+
+Similarly to other object-oriented languages, Python also supports class inheritance:
+
+    class Vehicle:
+        """ Every vehicle has a set of features"""
+        def __init__(self, plate_number, color, vin):
+            self.plate_number = plate_number
+            self.color = color
+            self.vin = vin
+
+    class Car(Vehicle):
+        """ Inherits from Vehicle
+        Different vehicles have different characteristics.
+        """
+        can_wheelie = False
+        wheels = 4
+
+    class Motorcycle(Vehicle):
+        """ Inherits from Vehicle
+        Different vehicles have different characteristics.
+        """
+        can_wheelie = True
+        wheels = 2
+
+How it works:
+
+    car = Car('00-AA-01', 'black', '123456789')
+    car.plate_number        # '00-AA-01'
+    car.can_wheelie         # False
+    car.wheels              # 4
+
+    moto = Motorcycle('99-ZZ-99', 'blue', '987654321')
+    moto.can_wheelie        # True
+    moto.wheels             # 2
 
 
 ### 3 - Running a Python program
