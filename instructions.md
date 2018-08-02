@@ -51,15 +51,17 @@ Note: Variable and function names should be written in `lower_case_with_undersco
 Python is dynamically typed, which means that you don't have to declare what type each variable is.
 So, lets imagine that you want to assign the value `10` to the variable `a`, you simply type:
 
-    a = 10
-    b = 5
-    a = b * 2
-    a = b + b
-    b += b
-    a = b # how much is a now?
-
+```python
+a = 10
+b = 5
+a = b * 2
+a = b + b
+b += b
+a = b # how much is a now?
+```
 If you want to assign a string or other data type:
 
+```python
     a = 'some string'           # you can use single quotes
     a = "some string"           # but you can also use double quotes
     a = 'let\'s dance'          # you can escape a quote with a backslash
@@ -67,7 +69,7 @@ If you want to assign a string or other data type:
     a = ['string1', 'string2']  # a list of strings
     pizza = True                # a boolean - notice the capital 'T'
     broccoli = False            # another boolean - again, notice the capital 'F'
-
+```
 
 Notice that there is no `;` after the assignment. Python does not use semi-colons.
 
@@ -247,3 +249,5 @@ Inside the file we should have a `main` method:
 More info in docs: https://docs.python.org/3/tutorial/modules.html
 
 Finally, to run your program simple write `python <my_file>.py` on your command line.
+
+### 4 - Exercises
