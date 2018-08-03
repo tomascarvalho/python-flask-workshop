@@ -1,6 +1,6 @@
 # Pyhton Intro
 
-This branch will cover the Python Intro part of the workshop.
+This document will cover the Python Intro part of the workshop.
 Most of this introduction is based on the official Python 3 tutorial, which can be found at https://docs.python.org/3/tutorial/.
 
 ## What is Python
